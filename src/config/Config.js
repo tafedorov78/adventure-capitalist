@@ -1,5 +1,7 @@
 export default {
 
+  gameId: 'capitalist',
+
   pattern: null,
   CANVAS_WIDTH_LANDSCAPE: 1024,
   CANVAS_HEIGHT_LANDSCAPE: 640,

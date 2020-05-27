@@ -23,12 +23,12 @@ config: {
       id: 'business1',
       isActive: false,
       isAuto: false,
-      initialPrice: 100,
+      initialPrice: 10,
       initialProfit: 100,
       currentProfit: 100,
       maxUpgradeIterations: 25,
       nextUpgrateCostPercent: 17,
-      managerCost: 1000,
+      managerCost: 10000,
       currentUpgrateCost: 40,
       currentUpgrateIteration: 1,
       currentCycleTime: 4
@@ -39,14 +39,14 @@ config: {
       isActive: false,
       isAuto: false,
       initialPrice: 100,
-      initialProfit: 100,
-      currentProfit: 100,
+      initialProfit: 1000,
+      currentProfit: 1000,
       maxUpgradeIterations: 25,
-      nextUpgrateCostPercent: 7,
-      managerCost: 1000,
-      currentUpgrateCost: 4,
-      currentUpgrateIteration: 2,
-      currentCycleTime: 1
+      nextUpgrateCostPercent: 20,
+      managerCost: 100000,
+      currentUpgrateCost: 400,
+      currentUpgrateIteration: 1,
+      currentCycleTime: 10
     },
     business3: {
       name: 'Taxi Service',
@@ -54,14 +54,14 @@ config: {
       isActive: false,
       isAuto: false,
       initialPrice: 1000,
-      initialProfit: 1,
-      currentProfit: 1,
+      initialProfit: 5000,
+      currentProfit: 5000,
       maxUpgradeIterations: 25,
-      nextUpgrateCostPercent: 7,
-      managerCost: 1000,
-      currentUpgrateCost: 4,
+      nextUpgrateCostPercent: 10,
+      managerCost: 400000,
+      currentUpgrateCost: 500,
       currentUpgrateIteration: 1,
-      currentCycleTime: 1
+      currentCycleTime: 20
     },
     business4: {
       name: 'Drug Store',
@@ -69,14 +69,14 @@ config: {
       isActive: false,
       isAuto: false,
       initialPrice: 10000,
-      initialProfit: 1,
-      currentProfit: 1,
+      initialProfit: 10000,
+      currentProfit: 10000,
       maxUpgradeIterations: 25,
       nextUpgrateCostPercent: 7,
-      managerCost: 1000,
-      currentUpgrateCost: 4,
+      managerCost: 1000000,
+      currentUpgrateCost: 1000,
       currentUpgrateIteration: 1,
-      currentCycleTime: 1
+      currentCycleTime: 30
     },
     business5: {
       name: 'Real Estate',
@@ -84,14 +84,14 @@ config: {
       isActive: false,
       isAuto: false,
       initialPrice: 100000,
-      initialProfit: 1,
-      currentProfit: 1,
+      initialProfit: 10000,
+      currentProfit: 10000,
       maxUpgradeIterations: 25,
       nextUpgrateCostPercent: 7,
-      managerCost: 1000,
+      managerCost: 10000000,
       currentUpgrateCost: 4,
       currentUpgrateIteration: 1,
-      currentCycleTime: 1
+      currentCycleTime: 40
     },
     business6: {
       name: 'Movie Studio',
@@ -99,14 +99,14 @@ config: {
       isActive: false,
       isAuto: false,
       initialPrice: 1000000,
-      initialProfit: 1,
-      currentProfit: 1,
+      initialProfit: 100000,
+      currentProfit: 100000,
       maxUpgradeIterations: 25,
       nextUpgrateCostPercent: 7,
-      managerCost: 1000,
-      currentUpgrateCost: 4,
+      managerCost: 30000000,
+      currentUpgrateCost: 10000,
       currentUpgrateIteration: 1,
-      currentCycleTime: 1
+      currentCycleTime: 60
     },
     business7: {
       name: 'Bank',
@@ -114,14 +114,14 @@ config: {
       isActive: false,
       isAuto: false,
       initialPrice: 10000000,
-      initialProfit: 1,
-      currentProfit: 1,
+      initialProfit: 1000000,
+      currentProfit: 1000000,
       maxUpgradeIterations: 25,
       nextUpgrateCostPercent: 7,
-      managerCost: 1000,
-      currentUpgrateCost: 4,
+      managerCost: 100000000,
+      currentUpgrateCost: 10000,
       currentUpgrateIteration: 1,
-      currentCycleTime: 1
+      currentCycleTime: 120
     },
     business8: {
       name: 'Football Team',
@@ -129,14 +129,14 @@ config: {
       isActive: false,
       isAuto: false,
       initialPrice: 100000000,
-      initialProfit: 1,
-      currentProfit: 1,
+      initialProfit: 10000000,
+      currentProfit: 10000000,
       maxUpgradeIterations: 25,
-      nextUpgrateCostPercent: 7,
-      managerCost: 1000,
-      currentUpgrateCost: 4,
+      nextUpgrateCostPercent: 10,
+      managerCost: 1000000000,
+      currentUpgrateCost: 10000,
       currentUpgrateIteration: 1,
-      currentCycleTime: 1
+      currentCycleTime: 240
     },
     business9: {
       name: 'Casino',
@@ -144,14 +144,14 @@ config: {
       isActive: false,
       isAuto: false,
       initialPrice: 1000000000,
-      initialProfit: 1,
-      currentProfit: 1,
+      initialProfit: 1000000000,
+      currentProfit: 1000000000,
       maxUpgradeIterations: 25,
       nextUpgrateCostPercent: 7,
-      managerCost: 1000,
-      currentUpgrateCost: 4,
+      managerCost: 100000000000,
+      currentUpgrateCost: 10000000,
       currentUpgrateIteration: 1,
-      currentCycleTime: 1
+      currentCycleTime: 500
     }
   }
 }

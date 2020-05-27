@@ -19,6 +19,7 @@ export default class BusinessComponent extends Component{
     this.view = new BusinessView(Config.pattern[this.data.id], this.onPlayerClicked.bind(this))
     this.view.setBusinessInitialPrice(this.model.initialPrice)
     this.view.setBusinessName(this.model.name)
+    this.view.setManagerCost(this.model.managerCost)
 
     if(this.model.isActive) {
       this.start()
@@ -137,6 +138,13 @@ export default class BusinessComponent extends Component{
 
   getData() {
     return this.model.getData()
+  }
+
+  destroyComponent() {
+    Signals.balanceUpdated.remove(this.onGameBalanceUpdate, this)
+    this.model = null
+    this.manager = null
+    this.view.destroy()
   }
 
 }

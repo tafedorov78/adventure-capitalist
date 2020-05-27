@@ -16,7 +16,6 @@ export default class WorkTimerView extends View {
 
     this.back = new PIXI.Sprite(PIXI.Texture.from('timerBack'))
     this.addChild(this.back)
-
     const style = new PIXI.TextStyle({
       align: "center",
       fill: "black",

@@ -36,6 +36,13 @@ export default class GameComponent extends Component {
     this.view.setBalanceText(this.model.balance)
   }
 
+  removeComponents() {
+    for (let i = 0; i < this.businessComponents.length; i ++) {
+      this.businessComponents[i].destroyComponent()
+    }
+    this.businessComponents = null
+  }
+
   saveAll() {
     let res = {}
     res.businesses = {}
@@ -49,8 +56,15 @@ export default class GameComponent extends Component {
   }
 
   addListeners() {
+    Signals.resetGame.add(this.onResetGame, this)
     Signals.sendProfit.add(this.onSendProfit, this)
     Signals.requestMoney.add(this.onRequestMoney, this)
+  }
+
+  removeListeners() {
+    Signals.resetGame.remove(this.onResetGame, this)
+    Signals.sendProfit.remove(this.onSendProfit, this)
+    Signals.requestMoney.remove(this.onRequestMoney, this)
   }
 
   onSendProfit(amount) {
@@ -63,6 +77,15 @@ export default class GameComponent extends Component {
     this.model.requestMoney(amount)
     this.view.setBalanceText(this.model.balance)
     this.currentData = this.saveAll()
+  }
+
+  onResetGame() {
+    this.removeComponents()
+    this.removeListeners()
+    this.model.resetData()
+    this.removeListeners()
+
+    this.init()
   }
 
   onManagerDidWork(data) {

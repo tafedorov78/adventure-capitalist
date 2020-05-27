@@ -1,7 +1,7 @@
 import Model from "@base/Model";
 import Signals from "@signals/Signals";
 import BusinessConfig from "@config/BusinessConfig";
-import BusinessComponent from "@/src/components/business/BusinessComponent";
+import Config from "@config/Config";
 
 export default class GameModel extends Model {
 
@@ -10,7 +10,7 @@ export default class GameModel extends Model {
   }
 
   init() {
-    let savedData = localStorage.getItem('CapitalistData3')
+    let savedData = localStorage.getItem(Config.gameId)
     if(savedData) {
       this.data = JSON.parse(savedData)
     } else {
@@ -18,7 +18,6 @@ export default class GameModel extends Model {
     }
     this.currentTime = Date.now() / 1000
     this.timePast = Math.ceil(this.currentTime - this.data.currentTime)
-    console.log('sec have past', this.timePast)
     this.balance = this.data.balance
   }
 
@@ -37,7 +36,7 @@ export default class GameModel extends Model {
   }
 
   saveData(data) {
-    localStorage.setItem('CapitalistData3', JSON.stringify(data))
+    localStorage.setItem(Config.gameId, JSON.stringify(data))
   }
 
   storeProfitFromBusiness(amount) {
@@ -55,6 +54,10 @@ export default class GameModel extends Model {
 
   updateBalance() {
     Signals.balanceUpdated.dispatch(this.balance)
+  }
+
+  resetData() {
+    localStorage.removeItem(Config.gameId)
   }
 
 }

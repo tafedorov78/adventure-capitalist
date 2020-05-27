@@ -29,7 +29,7 @@ export default class HireManagerView extends View {
       fontSize: 10
     })
 
-    this.hireManagerCostText = new PIXI.Text('1000.00', style)
+    this.hireManagerCostText = new PIXI.Text('', style)
     this.hireManagerCostText.anchor.set(0.5)
     Utils.applyFromPattern(this.hireManagerCostText, this.pattern.hireManagerCostText)
     this.addChild(this.hireManagerCostText)
@@ -44,6 +44,10 @@ export default class HireManagerView extends View {
     this.flag.rotation = Utils.deg2rad(-90)
     this.flag.visible = true
     gsap.to(this.flag, 0.3, {rotation: Utils.deg2rad(30), ease: Circ.easeIn})
+  }
+
+  setPrice(value) {
+    this.hireManagerCostText.text = value.toFixed(2)
   }
 
 

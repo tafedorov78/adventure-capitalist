@@ -151,6 +151,10 @@ export default class BusinessView extends View {
     this.workProgressView.updateCurrentProfit(value)
   }
 
+  setManagerCost(value) {
+    this.hireManagerView.setPrice(value)
+  }
+
   showFlag() {
     this.hireManagerView.filters = null
     this.hireManagerView.interactive = false
