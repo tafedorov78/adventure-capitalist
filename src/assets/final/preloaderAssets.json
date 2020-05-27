@@ -1,0 +1,40 @@
+{
+  "params": {
+    "baseUrl": "./"
+  },
+  "assets": [
+    {
+      "name": "clickToContinue",
+      "path": "preloader/clickToContine.png",
+      "metadata": {}
+    },
+    {
+      "name": "clickToContinue_OM",
+      "path": "preloader/clickToContine_OM.png",
+      "metadata": {}
+    },
+    {
+      "name": "preloadBackLand",
+      "path": "preloader/preloadBackLand.png",
+      "metadata": {}
+    },
+    {
+      "name": "preloaderBackPort",
+      "path": "preloader/preloaderBackPort.png",
+      "metadata": {}
+    },
+    {
+      "name": "progressBack",
+      "path": "preloader/progressBack.png",
+      "metadata": {}
+    },
+    {
+      "name": "progressTop",
+      "path": "preloader/progressTop.png",
+      "metadata": {}
+    }
+  ],
+  "metadata": {
+    "type": "assetsList"
+  }
+}

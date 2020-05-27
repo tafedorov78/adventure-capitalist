@@ -1,0 +1,20 @@
+{
+  "params": {
+    "baseUrl": "./"
+  },
+  "assets": [
+    {
+      "name": "pattern",
+      "path": "pattern.json",
+      "metadata": {}
+    },
+    {
+      "name": "asset-1",
+      "path": "asset-1.json",
+      "metadata": {}
+    }
+  ],
+  "metadata": {
+    "type": "assetsList"
+  }
+}
